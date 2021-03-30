@@ -1,0 +1,19 @@
+<template>
+    <div class={themeClass} role="status">
+        <div class={centerClass}>
+            <div class="slds-media__figure">
+                <span class="slds-icon_container">
+                    <lightning-icon icon-name={iconName}
+                                    alternative-text="icon"
+                                    variant={iconVariant} 
+                                    size={iconSize}
+                                    title="icon">
+                    </lightning-icon>
+                </span>
+            </div>
+            <div class="slds-media__body">
+                <slot name="message"></slot>
+            </div>
+        </div>
+    </div>
+</template>
